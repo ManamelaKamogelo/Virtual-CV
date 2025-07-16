@@ -362,7 +362,7 @@ section.active {
   display: none;
 }
 
-.resume-detail.resume-btn.active {
+.resume-detail.active {
   display: block;
 }
 
