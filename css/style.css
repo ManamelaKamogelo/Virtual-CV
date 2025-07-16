@@ -38,3 +38,27 @@ header {
   align-items: center;
   z-index: 100;
 }
+
+.logo {
+  font-size: 3rem;
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+nav a {
+  font-size: 2rem;
+  color: var(--white-color);
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: 0.5s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 4rem;
+  display: none;
+}
