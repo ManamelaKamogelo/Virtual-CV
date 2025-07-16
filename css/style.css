@@ -62,3 +62,32 @@ nav a.active {
   font-size: 4rem;
   display: none;
 }
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10rem 9% 2rem;
+  background: var(--bg-color);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.home-detail h1 {
+  font-size: clamp (3.5rem, 10vw, 5.5rem);
+}
+
+.home-detail h2 {
+  display: inline-block;
+  font-size: 3.2rem;
+  margin-top: -1rem;
+}
+
+.home-detail p {
+  font-size: 1.6rem;
+  margin: 1rem 0 2.5rem;
+}
