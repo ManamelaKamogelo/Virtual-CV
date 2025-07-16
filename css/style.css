@@ -152,7 +152,7 @@ section {
 .home-img .img-box::before,
 .home-img .img-box::after {
   content: "";
-  position: 50rem;
+  position: absolute;
   width: 50rem;
   height: 50rem;
   background: conic-gradient(
