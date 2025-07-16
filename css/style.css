@@ -91,3 +91,48 @@ section {
   font-size: 1.6rem;
   margin: 1rem 0 2.5rem;
 }
+
+.home-datail .btn-sci {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: var(--main-color);
+  border: 0.2rem solid var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--main-color);
+  box-shadow: none;
+}
+
+.home-datail .btn-sci .sci {
+  margin-left: 2rem;
+}
+
+.home-datail .btn-sci .sci a {
+  display: inline-flex;
+  padding: 0.8rem;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 0 0.8rem;
+  transition: 0.5s;
+}
+
+.home-datail .btn-sci .sci a:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
