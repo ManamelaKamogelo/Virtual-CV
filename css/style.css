@@ -265,6 +265,12 @@ section.active {
   background: var(--second-bg-color);
   border: 0.2rem solid var(--second-bg-color);
   border-radius: 1rem;
+  transition: 0.5s;
+}
+
+.services-container .services-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
 }
 
 .services-box .icon {
@@ -275,12 +281,22 @@ section.active {
 
 .services-box .icon i {
   font-size: 4.5rem;
+  transition: 0.5s;
+}
+
+.services-box:hover .icon :not(a i) {
+  color: var(--main-color);
 }
 .services-box .icon a {
   display: inline-flex;
   background: var(--white-color);
   border-radius: 50%;
   padding: 1rem;
+  transition: 0.5s;
+}
+
+.services-box:hover .icon a {
+  background: var(--main-color);
 }
 
 .services-box .icon a i {
@@ -288,12 +304,19 @@ section.active {
   color: var(--bg-color);
   transform: rotate(225deg);
 }
+.services-box .icon a:hover i {
+  transform: rotate(180deg);
+}
 
 .services-box h3 {
   font-size: 3rem;
   margin: 0.5rem 0 2rem;
+  transform: 0.5s;
 }
 
+.services-box:hover h3 {
+  color: var(--main-color);
+}
 .services-box p {
   font-size: 1.6rem;
 }
