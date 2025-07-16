@@ -357,6 +357,15 @@ section.active {
   border-color: var(--main-color);
   color: var(--main-color);
 }
+
+.resume-detail {
+  display: none;
+}
+
+.resume-detail.resume-btn.active {
+  display: block;
+}
+
 .resume-box .heading {
   font-size: 3.5rem;
   text-align: left;
