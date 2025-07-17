@@ -16,7 +16,7 @@
 
   <body>
     <!-- header-->
-    <header>
+    <header class="active">
       <a href="#" class="logo">Lethabo Kamogelo Manamela</a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
@@ -30,8 +30,18 @@
       </nav>
     </header>
 
+    <!-- bars background-->
+     <div class="bars-box active">
+      <div class="bar" style="--i:6;"></div>
+      <div class="bar" style="--i:5;"></div>
+      <div class="bar" style="--i:4;"></div>
+      <div class="bar" style="--i:3;"></div>
+      <div class="bar" style="--i:2;"></div>
+      <div class="bar" style="--i:1;"></div>
+     </div>
+
     <!--home section-->
-    <section class="home ">
+    <section class="home active">
       <div class="home-detail">
         <h1>Lethabo Kamogelo Manamela</h1>
         <h2>
@@ -483,8 +493,52 @@
     </section>
 
     <!-- contact section-->
-     <section class="contact active">
+     <section class="contact">
+        <div class="contact-container">
+          <div class="contact-box">
+            <h2>Let's Work Together</h2>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi non accusantium error voluptate dicta? Ipsum, laborum? Labore, quis laboriosam aperiam optio error quaerat deserunt voluptatum nobis sit dolorem modi dignissimos.</p>
+            <div class="contact-detail">
+              <i class='bx bxs-phone' ></i>
+              <div class="detail">
+                <p>Phone</p>
+                <p>(+27)62 420 4172</p>
+              </div>
+            </div>
 
+            <div class="contact-detail">
+              <i class='bx bxs-envelope' ></i>
+              <div class="detail">
+                <p>Email</p>
+                <p>lethabokmanamela@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class='bx bxs-map' ></i>
+              <div class="detail">
+                <p>Address</p>
+                <p>2013 Block Ux
+                  Mabopane
+                  0190
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <form action="">
+                <h2 class="heading">Contact <span>Me!</span></h2>
+                <div class="field-box">
+                  <input type="text" placeholder="Full Name" required>
+                  <input type="email" placeholder="Email Address" required>
+                  <input type="text" placeholder="Phone" required>
+                  <input type="text" placeholder="Email Subject" required>
+                  <textarea name="" id="" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Button</button>
+            </form>
+          </div>
+        </div>
      </section>
 
     <!-- custom js -->
