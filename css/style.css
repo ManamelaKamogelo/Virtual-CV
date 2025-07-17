@@ -370,3 +370,59 @@ section.active {
   font-size: 3.5rem;
   text-align: left;
 }
+
+.resume-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmac(30rem 1fr));
+  gap: 2rem;
+  height: 45rem;
+  overflow: auto;
+}
+
+.resume-list::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.resume-list::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 1rem;
+}
+
+.resume-list:hover::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+.resume-list .resume-item {
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  padding: 3rem 2.5rem;
+  height: calc((45rem - 2rem) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resume-item .year {
+  color: var(--main-color);
+}
+
+.resume-item h3 {
+  font-size: 2.2rem;
+}
+
+.resume-item .company {
+  position: relative;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resume-item .company::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  background: var(--main-color);
+  border-radius: 50%;
+  margin-left: -2rem;
+}
