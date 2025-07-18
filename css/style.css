@@ -767,13 +767,13 @@ section.active {
 }
 
 /* breakpoints*/
-@media screen and (max-wdith: 1200px) {
+@media screen and (max-width: 1200px) {
   html {
     font-size: 55%;
   }
 }
 
-@media screen and (max-wdith: 992px) {
+@media screen and (max-width: 992px) {
   header {
     padding: 2rem 4%;
   }
@@ -783,13 +783,13 @@ section.active {
   }
 }
 
-@media screen and (max-wdith: 810px) {
+@media screen and (max-width: 810px) {
   .contain-box .field-box {
     grid-template-columns: 1fr;
   }
 }
 
-@media screen and (max-wdith: 768px) {
+@media screen and (max-width: 768px) {
   #menu-icon {
     display: block;
   }
