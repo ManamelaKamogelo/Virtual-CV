@@ -800,24 +800,20 @@ section.active {
     top: 100%;
     left: 0;
     width: 100vw;
+    padding: 1rem 0;
     background: var(--bg-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     text-align: center;
-    flex-direction: column;
-    gap: 0;
     display: none;
-    z-index: 100;
   }
-
   nav.active {
-    display: flex;
+    display: block;
   }
 
   nav a {
     display: block;
-    margin: 2rem 0;
-    font-size: 2.2rem;
+    margin: 4rem 0;
   }
 
   .home {

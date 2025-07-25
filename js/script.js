@@ -2,11 +2,11 @@ const navLinks = document.querySelectorAll("header nav a");
 const logoLink = document.querySelector(".logo");
 const sections = document.querySelectorAll("section");
 const menuIcon = document.querySelector("#menu-icon");
-const nav = document.querySelector("header nav");
+const navbar = document.querySelector("header nav");
 
 menuIcon.addEventListener("click", () => {
-  nav.classList.toggle("active");
   menuIcon.classList.toggle("bx-x"); // changes icon to 'X' when open
+  navbar.classList.toggle("active");
 });
 
 const activePage = () => {
@@ -32,7 +32,7 @@ const activePage = () => {
   });
 
   menuIcon.classList.remove("bx-x");
-  nav.classList.remove("active");
+  navbar.classList.remove("active");
 };
 
 navLinks.forEach((link, idx) => {
