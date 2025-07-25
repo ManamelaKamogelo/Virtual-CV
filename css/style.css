@@ -846,7 +846,7 @@ section.active {
   }
 }
 
-/*@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .home-img .img-box {
     width: 30rem;
     height: 30rem;
@@ -855,15 +855,15 @@ section.active {
   .contact-box .field-box {
     grid-template-columns: 1fr;
   }
-}*/
+}
 
-/*@media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   html {
     font-size: 50%;
   }
-}*/
+}
 
-/*@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .home-detail,
   .resume-box h2,
   .resume-box .heading,
@@ -888,4 +888,4 @@ section.active {
   .contact-box h2 {
     font-size: 3.5rem;
   }
-}*/
+}
