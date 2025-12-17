@@ -125,3 +125,59 @@ arrowLeft.addEventListener("click", () => {
 
   activePortfolio();
 });
+
+// EmailJS Configuration and Contact Form Handler
+(function () {
+  // Initialize EmailJS with your public key
+  emailjs.init("tD9Eu4EUpfDHjUo6X"); // Replace with your actual EmailJS public key
+})();
+
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Show sending status
+    formStatus.textContent = "Sending message...";
+    formStatus.style.color = "#00abf0";
+
+    // Get form data
+    const templateParams = {
+      from_name: contactForm.from_name.value,
+      from_email: contactForm.from_email.value,
+      phone: contactForm.phone.value,
+      subject: contactForm.subject.value,
+      message: contactForm.message.value,
+      to_email: "lethabokmanamela@gmail.com",
+    };
+
+    // Send email using EmailJS
+    emailjs.send("service_c88lhvp", "template_gbixu65", templateParams).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        formStatus.textContent =
+          "Message sent successfully! I'll get back to you soon.";
+        formStatus.style.color = "#0ef";
+        contactForm.reset();
+
+        // Clear status message after 5 seconds
+        setTimeout(() => {
+          formStatus.textContent = "";
+        }, 5000);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        formStatus.textContent =
+          "Failed to send message. Please try again or email me directly.";
+        formStatus.style.color = "#ff0000";
+
+        // Clear error message after 5 seconds
+        setTimeout(() => {
+          formStatus.textContent = "";
+        }, 5000);
+      }
+    );
+  });
+}

@@ -12,6 +12,8 @@
     />
     <!-- customs-->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </head>
 
   <body>
@@ -585,21 +587,22 @@
         </div>
 
         <div class="contact-box">
-          <form action="">
+          <form id="contact-form">
             <h2 class="heading">Contact <span>Me!</span></h2>
             <div class="field-box">
-              <input type="text" placeholder="Full Name" required />
-              <input type="email" placeholder="Email Address" required />
-              <input type="text" placeholder="Phone" required />
-              <input type="text" placeholder="Email Subject" required />
+              <input type="text" name="from_name" placeholder="Full Name" required />
+              <input type="email" name="from_email" placeholder="Email Address" required />
+              <input type="text" name="phone" placeholder="Phone" required />
+              <input type="text" name="subject" placeholder="Email Subject" required />
               <textarea
-                name=""
-                id=""
+                name="message"
+                id="message"
                 placeholder="Your Message"
                 required
               ></textarea>
             </div>
-            <button type="submit" class="btn">Send Button</button>
+            <button type="submit" class="btn">Send Message</button>
+            <div id="form-status" style="margin-top: 10px; font-size: 14px;"></div>
           </form>
         </div>
       </div>
